@@ -14,6 +14,7 @@ public class App {
                 System.out.println("Y坐标为：" + (int) (Math.random() * 100 % 100));
             }else{
                 System.out.println("无效数值,请输入1");
+                
             }
         }
     }
