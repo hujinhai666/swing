@@ -49,7 +49,6 @@ public class App {
         frame.setBounds(100,100,1024,720);
         frame.setVisible(true);
     }
-
     public static void main(String[] args) {
         new App().go();
     }
