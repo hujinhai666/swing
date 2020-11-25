@@ -13,10 +13,10 @@ public class App {
     public App() {
         textArea_A.setText("欢迎来到0.0");
         textArea_A.setBounds(0,0,512,200);
-        textArea_A.setBackground(Color.orange);
+        textArea_A.setBackground(Color.CYAN);
         myPanel.add(textArea_A);
         textArea_B.setBounds(0,250,512,500);
-        textArea_B.setBackground(Color.yellow);
+        textArea_B.setBackground(Color.green);
         myPanel.add(textArea_B);
 
         textArea_A.addKeyListener(new KeyAdapter() {
