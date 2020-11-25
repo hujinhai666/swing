@@ -12,7 +12,7 @@ public class App {
     JTextArea textArea_B=new JTextArea();
     //构造方法
     public App() {
-        textArea_A.setText("目前谁是中国最有钱的人？\n\tA:马云\n\tB:李嘉诚\n\tC:王健林");
+        textArea_A.setText("1.目前谁是中国最有钱的人？\n\tA:马云\n\tB:李嘉诚\n\tC:王健林");
         textArea_A.setBounds(0,0,512,200);
         textArea_A.setBackground(Color.ORANGE);
         myPanel.add(textArea_A);
@@ -31,8 +31,12 @@ public class App {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER ) {
                     if(textArea_A2.getText().equals("A")){
                         textArea_B.setText("回答正确\n");
+                    }else if(textArea_A2.getText().equals("B")){
+                        textArea_B.setText("答案错误，答案接近了\n");
+                    }else if(textArea_A2.getText().equals("C")){
+                        textArea_B.setText("答案错误，答案接近了\n");
                     }else{
-                        textArea_B.append("回答错误");
+                        textArea_B.setText("回答错误，输入不规范，请看清题目。");
                     }
                 }
 
