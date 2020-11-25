@@ -31,12 +31,16 @@ public class App {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER ) {
                     if(textArea_A2.getText().equals("A")){
                         textArea_B.setText("回答正确\n");
+                        textArea_A2.setText("");
                     }else if(textArea_A2.getText().equals("B")){
                         textArea_B.setText("答案错误，答案接近了\n");
+                        textArea_A2.setText("");
                     }else if(textArea_A2.getText().equals("C")){
-                        textArea_B.setText("答案错误，答案接近了\n");
+                        textArea_B.setText("答案又错了，快了快了\n");
+                        textArea_A2.setText("");
                     }else{
                         textArea_B.setText("回答错误，输入不规范，请看清题目。");
+                        textArea_A2.setText("");
                     }
                 }
 
