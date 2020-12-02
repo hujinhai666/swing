@@ -27,9 +27,6 @@ public class App {
                     if (e.getKeyCode() == KeyEvent.VK_DOWN) {
                         feiji.setBounds(feiji.getX(),feiji.getY()+zb,60,60);
                     }
-//                    if(feiji.getX()>720){
-//                        label_txt.setBounds(0,0,512,720);
-//                    }
             }
         });
 
@@ -40,10 +37,6 @@ public class App {
         feiji.setIcon(new ImageIcon(imgURL2));
         feiji.setBounds(200,615,64,64);
         myPanel.add(feiji);
-
-//        label_txt.setText("超出");
-//        label_txt.setBounds(600,800,512,720);
-//        myPanel.add(label_txt);
 
         myPanel.setLayout(null);
         java.net.URL imgURL1 = App.class.getResource("img/background.png");
@@ -60,8 +53,8 @@ public class App {
         frame.setVisible(true);
         myPanel.setFocusable(true);//键盘监听必须加panel面板的焦点获取才可以
     }
-    
     public static void main(String[] args) {
         new App().go();
     }
 }
+
