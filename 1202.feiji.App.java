@@ -60,6 +60,7 @@ public class App {
         frame.setVisible(true);
         myPanel.setFocusable(true);//键盘监听必须加panel面板的焦点获取才可以
     }
+    
     public static void main(String[] args) {
         new App().go();
     }
