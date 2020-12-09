@@ -50,6 +50,6 @@ public class App {
         frame.setVisible(true);
     }
     public static void main(String[] args) {
-        new App().go();
+        new App().go(); 
     }
 }
