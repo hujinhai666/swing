@@ -80,7 +80,7 @@ public class App {
                         textArea_A.setText("");
                     }
                 }
-                
+
             }
         });
 
@@ -89,6 +89,7 @@ public class App {
     void go(){
         textArea_A.setBounds(0,0,150,30);
         textArea_A.setText("");
+        textArea_A.setVisible(false);
         myPanel.add(textArea_A);
 
         label_fenshu.setBounds(200,0,100,30);
